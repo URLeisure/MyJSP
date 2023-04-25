@@ -1,11 +1,15 @@
 <%@ page import="java.math.BigInteger" %><%--
   Created by IntelliJ IDEA.
   bean.User: URLeisure
-  Date: 2023/4/4
-  Time: 9:16
+  Date: 2023/5/4
+  Time: 16:05
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>算法之谜</title>
+</head>
 <%!
     public static String reverse(String s) {
         StringBuffer buffer = new StringBuffer(s);
@@ -14,20 +18,14 @@
     }
 %>
 
-<html>
-<head>
-    <title>回文</title>
-</head>
-<body>
-<div align="center"
 <%
     String regex = "[1-9][0-9]*";
     String startNumber = request.getParameter("number");
     if (startNumber == null || startNumber.length() == 0) {
-        startNumber = "520";
+        startNumber = "number";
     }
     if (!startNumber.matches(regex)) {
-        response.sendRedirect("fouth_work/A1.jap");
+        response.sendRedirect("homework3_inputNumber.jsp");
         return;
     }
     long step = 1;
@@ -36,15 +34,14 @@
     BigInteger resultNumber = number.add(reverseNumber);
     out.print("<br>" + number + "+" + reverseNumber + "=" + resultNumber);
     BigInteger p = new BigInteger(reverse(resultNumber.toString()));
-    while(!resultNumber.equals(p)){
+    while (!resultNumber.equals(p)) {
         number = new BigInteger(resultNumber.toString());
         reverseNumber = new BigInteger(reverse(number.toString()));
         resultNumber = number.add(reverseNumber);
         p = new BigInteger(reverse(resultNumber.toString()));
-        out.print("<br>"+number+"+"+ reverseNumber+"="+resultNumber);
+        out.print("<br>" + number + "+" + reverseNumber + "=" + resultNumber);
         step++;
     }
-    out.print("<h3>"+step+"回文数"+resultNumber+"</h3>");
+    out.print("<br>" + step + "步得到回文数:" + resultNumber);
 %>
-</body>
 </html>

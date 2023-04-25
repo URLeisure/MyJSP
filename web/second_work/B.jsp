@@ -1,7 +1,7 @@
 <%@ page import="java.time.LocalDate" %>
 <%@ page import="java.time.LocalTime" %><%--
   Created by IntelliJ IDEA.
-  User: URLeisure
+  bean.User: URLeisure
   Date: 2023/3/7
   Time: 8:10
   To change this template use File | Settings | File Templates.

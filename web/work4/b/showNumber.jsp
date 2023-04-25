@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: URLeisure
+  bean.User: URLeisure
   Date: 2023/4/25
   Time: 17:19
   To change this template use File | Settings | File Templates.
@@ -22,7 +22,7 @@
 
         <jsp:getProperty name="fraction" property="fenmu"></jsp:getProperty>
     </h1>
-    
+
 </div>
 </body>
 </html>

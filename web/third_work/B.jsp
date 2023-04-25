@@ -1,6 +1,6 @@
 <%@ page import="java.time.LocalDate" %><%--
   Created by IntelliJ IDEA.
-  User: URLeisure
+  bean.User: URLeisure
   Date: 2023/3/21
   Time: 9:08
   To change this template use File | Settings | File Templates.

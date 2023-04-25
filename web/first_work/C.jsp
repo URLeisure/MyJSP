@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: URLeisure
+  bean.User: URLeisure
   Date: 2023/3/3
   Time: 11:32
   To change this template use File | Settings | File Templates.
