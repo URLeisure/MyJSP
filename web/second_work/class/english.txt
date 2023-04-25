@@ -1,0 +1,21 @@
+﻿<div align="center" style="color:#000099">
+	<h5>
+	Lesson 1 A private conversation 私人谈话<br>
+	----------------------------------------<br>
+	Last week I went to the theatre. <br>
+	I had a very good seat.<br>
+	The play was very interesting.<br>
+	I did not enjoy it.<br>
+	A young man and a young woman were sitting behind me.<br>
+	They were talking loudly.<br>
+	I got very angry.<br>
+	I could not hear the actors.<br>
+	I turned round.I looked at the man and the woman angrily.<br>
+	They did not pay any attention.<br>
+	In the end, I could not bear it.<br>
+	I turned round again.<br>
+	'I can't hear a word!' I said angrily.<br>
+	It’s none of your business,' the young man said rudely.<br>
+	 'This is a private conversation!'.<br>
+	 </h5>
+ </div>
