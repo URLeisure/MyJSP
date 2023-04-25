@@ -6,35 +6,38 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Result</title>
+</head>
+<body>
+<%-- 从表单中获取用户名和密码 --%>
 <%
-    // 获取表单提交的用户名和密码
     String username = request.getParameter("username");
     String password = request.getParameter("password");
+%>
 
-    // 判断用户名和密码是否正确
-    if (username.equals("admin") && password.equals("admin")) {
-%>
-<script>
-    // 弹出登录成功提示框
-    alert("登录成功!");
-</script>
+<%-- 进行用户名和密码的验证 --%>
 <%
-} else if (username.equals("admin")) {
+    if (username.equals("admin") && password.equals("admin")) {
+        out.println("<h1>Login Successful!</h1>");
+    } else if (username.equals("admin")) {
 %>
 <script>
-    // 弹出密码错误提示框，并返回登录页面
-    alert("密码错误，请确认后重新输入!");
-    window.location = "Login Form.jsp";
+    alert("无效的密码，请重新输入！");
+    window.history.back();
 </script>
 <%
 } else {
 %>
 <script>
-    // 弹出用户不存在提示框，并返回登录页面
-    alert("此用户不存在!");
-    window.location = "Login Form.jsp";
+    alert("无效的账号，请重新输入！");
+    window.history.back();
 </script>
 <%
     }
 %>
+</body>
+</html>
