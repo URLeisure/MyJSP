@@ -22,13 +22,22 @@
 <%-- 进行用户名和密码的验证 --%>
 <%
     if (username.equals("admin") && password.equals("admin")) {
-        out.println("<h1>Login Successful!</h1>");
-    } else if (username.equals("admin")) {
 %>
+
+<script>
+    alert("登录成功！");
+    window.location.href = "form.jsp";
+</script>
+
+<%
+} else if (username.equals("admin")) {
+%>
+
 <script>
     alert("无效的密码，请重新输入！");
     window.history.back();
 </script>
+
 <%
 } else {
 %>
